@@ -8,12 +8,168 @@
   --wenge-brown: hsl(30, 10%, 34%);
   --dark-charcoal: hsl(24, 5%, 18%);
 }
+body {
+  background: var(--white);
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 img {
-  inline-size: 100px;
+  inline-size: 100%;
   block-size: auto;
+}
+.main-sec {
+  padding: 1.5rem;
+}
+h1 {
+  margin-block-end: 1rem;
+}
+p {
+  color: var(--wenge-brown);
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.pinkish-article {
+  margin-block: 2rem;
+  background: var(--rose-white);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  font-family: "Outfit", sans-serif;
+}
+.pinkish-article h2 {
+  color: var(--dark-raspberry);
+  margin-block: 0.7rem;
+  font-size: large;
+}
+.pinkish-article ul {
+  margin-inline-start: 1.2rem;
+  color: var(--wenge-brown);
+}
+.span-strong {
+  font-weight: bold;
+}
+.list-align {
+  margin-inline-start: 1rem;
+  display: block;
+}
+.pinkish-article li {
+  margin-block: 0.4rem;
+  margin-inline-start: 1rem;
+}
+.pinkish-article li::marker {
+  color: var(--dark-raspberry);
+  font-size: smaller;
+  padding-left: 3rem;
+}
+.ingreds-article {
+  margin-block: 2rem;
+}
+.ingreds-article h2,
+.instruction-sec h2,
+.nutrition-article h2 {
+  color: var(--nutmeg);
+  font-family: "Young Serif", serif;
+  margin-block: 1.2rem;
+}
+.ingreds-article ul {
+  margin-inline-start: 1rem;
+  font-family: "Outfit", sans-serif;
+  color: var(--wenge-brown);
+}
+.ingreds-article li {
+  margin-block: 1rem;
+}
+.ingreds-article li::marker {
+  font-size: smaller;
+}
+.ingreds-article span {
+  margin-inline-start: 1.2rem;
+  display: block;
+}
+.line-div {
+  background: var(--light-grey);
+  block-size: 1px;
+  border: none;
+}
+
+.instruction-sec {
+  margin-block: 2rem;
+}
+.instruction-sec h2 {
+  color: var(--dark-raspberry);
+}
+.instruction-sec ol {
+  margin-inline-start: 1.4rem;
+  font-family: "Outfit", sans-serif;
+}
+.instruction-sec li {
+  margin-block: 0.7rem;
+}
+.ingreds-article li::marker {
+  color: var(--dark-raspberry);
+  font-weight: bolder;
+}
+.span-block {
+  margin-inline-start: 0.8rem;
+  display: block;
+  line-height: 1.5;
+  color: var(--wenge-brown);
+}
+.span-bold {
+  font-weight: bold;
+}
+.nutrition-article {
+  margin-block: 2rem;
+}
+table {
+  margin-block: 1rem;
+  inline-size: 100%;
+}
+
+td {
+  border-block-end: var(--light-grey) solid 1px;
+  padding-block: 1rem;
+  padding-inline-start: 1.5rem;
+}
+.left-td {
+  color: var(--wenge-brown);
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+.right-td {
+  font-family: "Outfit", sans-serif;
+  color: var(--nutmeg);
+  font-weight: bold;
+}
+footer {
+  inline-size: 100%;
+}
+.footer {
+  color: var(--nutmeg);
+  margin-inline: auto;
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: var(--eggshell);
+    padding-block: 3rem;
+  }
+  main {
+    max-inline-size: 768px;
+    background: var(--white);
+    margin-inline: auto;
+    border-radius: 1rem;
+  }
+  .desk-img-style {
+    padding: 1.8rem;
+    padding-block-end: 0;
+  }
+  img {
+    border-radius: 0.6rem;
+  }
 }
