@@ -84,6 +84,7 @@ p {
 }
 .ingreds-article li::marker {
   font-size: smaller;
+  color: var(--nutmeg);
 }
 .ingreds-article span {
   margin-inline-start: 1.2rem;
@@ -98,15 +99,16 @@ p {
 .instruction-sec {
   margin-block: 2rem;
 }
-.instruction-sec h2 {
-  color: var(--dark-raspberry);
-}
 .instruction-sec ol {
   margin-inline-start: 1.4rem;
   font-family: "Outfit", sans-serif;
 }
 .instruction-sec li {
   margin-block: 0.7rem;
+}
+.instruction-sec li::marker {
+  color: var(--nutmeg);
+  font-weight: bold;
 }
 .ingreds-article li::marker {
   color: var(--dark-raspberry);
